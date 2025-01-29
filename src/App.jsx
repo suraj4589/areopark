@@ -22,12 +22,17 @@ function App() {
       {!noNavbarRoutes.includes(location.pathname) && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<LoginForm />} />
+{/*         <Route path="/login" element={<LoginForm />} />
         <Route path="/signup" element={<SignUpForm />} />
         <Route path="/about" element={<About />} />
         <Route path="/offer" element={<HolidayOffer />} />
         <Route path="/hotel" element={<HotelBooking />} />
-        <Route path="/api/user/dashboard" element={<Dashboard />}/>
+        <Route path="/api/user/dashboard" element={<Dashboard />}/> */}
+        <About/>
+        <HolidayOffer/>
+        <HotelBooking/>
+        <SignupForm/>
+        <LoginForm/>
       </Routes>
       {!noNavbarRoutes.includes(location.pathname) && <Footer />}
     </>
