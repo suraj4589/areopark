@@ -79,9 +79,7 @@ function Navbar() {
                 <a
                    key={item.id}
                   href={item.url}
-                  className={`" text-white  hover:text-gray-800 px-4 py-2" ${item.url === pathname.hash  
-                                                                           ? "z-2 lg:text-n-1"
-                    : "lg:text-n-1/50"}`}
+                  className={`" text-white  hover:text-gray-800 px-4 py-2" ${item.url === pathname.hash}`}
                 >
                   {item.title}
                 </a>
