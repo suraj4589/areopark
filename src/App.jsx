@@ -31,7 +31,7 @@ function App() {
         <About/>
         <HolidayOffer/>
         <HotelBooking/>
-        <SignupForm/>
+        <SignUpForm/>
         <LoginForm/>
       </Routes>
       {!noNavbarRoutes.includes(location.pathname) && <Footer />}
