@@ -14,7 +14,7 @@ import {
 
 export const navbarMenu = [
   { id: "1", title: "Home", url: "/" },
-  { id: "2", title: "About", url: "#about" },
+  { id: "2", title: "About", url: "about" },
   { id: "3", title: "HolidayOffer", url: "#offer" },
   { id: "4", title: "HotelBooking", url: "#hotel" },
   { id: "5", title: "login", url: "#login" },
