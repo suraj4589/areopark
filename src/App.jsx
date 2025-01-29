@@ -10,39 +10,44 @@ import HolidayOffer from './pages/HolidayOffer';
 import HotelBooking from './pages/HotelBooking';
 import Dashboard from './components/dashboard/DashBoard';
 
-function App() {
-  const location = useLocation();
+const  App = () => {
+  // const location = useLocation();
 
  
-  const noNavbarRoutes = ['/api/user/dashboard'];
+  // const noNavbarRoutes = ['/api/user/dashboard'];
 
   return (
     <>
       
-      {!noNavbarRoutes.includes(location.pathname) && <Navbar />}
+{/*       {!noNavbarRoutes.includes(location.pathname) && <Navbar />}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} /> */}
 {/*         <Route path="/login" element={<LoginForm />} />
         <Route path="/signup" element={<SignUpForm />} />
         <Route path="/about" element={<About />} />
         <Route path="/offer" element={<HolidayOffer />} />
         <Route path="/hotel" element={<HotelBooking />} />
         <Route path="/api/user/dashboard" element={<Dashboard />}/> */}
+  <div>
+        <Home/>      
         <About/>
         <HolidayOffer/>
         <HotelBooking/>
         <SignUpForm/>
         <LoginForm/>
-      </Routes>
-      {!noNavbarRoutes.includes(location.pathname) && <Footer />}
+  </div>
+{/*        </Routes>
+       {!noNavbarRoutes.includes(location.pathname) && <Footer />} */}
     </>
   );
 }
+  export default App;
 
-export default function AppWrapper() {
+{/* export default function AppWrapper() {
   return (
     <Router>
       <App />
     </Router>
   );
 }
+ */}
