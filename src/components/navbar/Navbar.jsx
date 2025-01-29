@@ -75,10 +75,13 @@ function Navbar() {
         >
           <ul className="flex  flex-col  lg:flex-row lg:space-x-6 items-center lg:items-center">
             {navbarMenu.map((item) => (
-              <li key={item.id} className="my-2  lg:my-0">
+              <li className="my-2  lg:my-0">
                 <a
+                   key={item.id}
                   href={item.url}
-                  className={`" text-white  hover:text-gray-800 px-4 py-2" ${item.url === pathname.hash  }`}
+                  className={`" text-white  hover:text-gray-800 px-4 py-2" ${item.url === pathname.hash  
+                                                                           ? "z-2 lg:text-n-1"
+                    : "lg:text-n-1/50"}`}
                 >
                   {item.title}
                 </a>
