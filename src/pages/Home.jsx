@@ -31,11 +31,7 @@ function Home() {
         <Suspense fallback={<div>Loading images...</div>}>
           <LazyImage />
         </Suspense>
-        <About/>
-        <HolidayOffer/>
-        <HotelBooking/>
-        <SignupForm/>
-        <LoginForm/>
+       
       </div>
     </>
   )
