@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Goa, Fiji, Laksh, Thailand, Manali, Switzerland } from '../assets/homeImg/index.js'
 
-const HolidayOffer = () => {
+function HolidayOffer  ()  {
   const [offers] = useState([
     {
       id: 1,
