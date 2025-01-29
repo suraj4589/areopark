@@ -25,6 +25,26 @@ function HotelBooking() {
   return (
     <>
       <div className="mt-14 min-h-full bg-orange-100 flex items-center justify-center p-2">
+        <div>
+        <div className="grid grid-cols-1 justify-center md:flex items-center  gap-4 m-2 ">
+          {hotels.map((hotel) => (
+            <div
+              key={hotel.id}
+              className="border rounded-lg p-4 text-center shadow-md bg-white"
+            >
+              <img
+                src={hotel.image}
+                alt={hotel.name}
+                loading="lazy"
+                className="w-full h-32 object-cover rounded-lg mb-4"
+              />
+              <h3 className="font-semibold text-lg text-gray-800">
+                {hotel.name}
+              </h3>
+              <p className="text-gray-600">{hotel.brand}</p>
+            </div>
+          ))}
+        </div>
         <div className="bg-white  rounded-lg shadow-xl p-8 w-full max-w-2xl">
           <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center">Book Your Hotel</h1>
           <form onSubmit={handleSubmit} >
@@ -121,26 +141,7 @@ function HotelBooking() {
         </div>
 
       </div>
-      <div>
-        <div className="grid grid-cols-1 justify-center md:flex items-center  gap-4 m-2 ">
-          {hotels.map((hotel) => (
-            <div
-              key={hotel.id}
-              className="border rounded-lg p-4 text-center shadow-md bg-white"
-            >
-              <img
-                src={hotel.image}
-                alt={hotel.name}
-                loading="lazy"
-                className="w-full h-32 object-cover rounded-lg mb-4"
-              />
-              <h3 className="font-semibold text-lg text-gray-800">
-                {hotel.name}
-              </h3>
-              <p className="text-gray-600">{hotel.brand}</p>
-            </div>
-          ))}
-        </div>
+      
       </div>
     </>
   );
