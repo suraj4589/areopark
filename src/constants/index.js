@@ -13,12 +13,12 @@ import {
 
 
 export const navbarMenu = [
-  { id: "1", title: "Home", url: "/" },
-  { id: "2", title: "About", url: "about" },
-  { id: "3", title: "HolidayOffer", url: "#offer" },
-  { id: "4", title: "HotelBooking", url: "#hotel" },
-  { id: "5", title: "login", url: "#login" },
-  { id: "6", title: "Sign in", url: "#Signup" },
+  { id: "0", title: "Home", url: "/" },
+  { id: "1", title: "About", url: "#about" },
+  { id: "2", title: "HolidayOffer", url: "#offers" },
+  { id: "3", title: "HotelBooking", url: "#hotel" },
+  { id: "4", title: "Login", url: "#loginform" },
+  { id: "5", title: "Sign-in", url: "#signupform" },
 
 ];
 
