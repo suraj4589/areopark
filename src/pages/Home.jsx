@@ -4,7 +4,6 @@ import FlightSearchForm from '../components/bookairticket/FlightSearchForm'
 import WhereGoMore from '../components/Homecontainer/WhereGoMore'
 import AirlinePartners from '../components/Homecontainer/AirlinePartners'
 import AreoparkScene from '../components/Homecontainer/AreoparkScene'
-import LoginForm from '../components/login/LoginForm'
 
 
 const LazyImage = React.lazy(() =>
@@ -28,7 +27,6 @@ function Home() {
         <Suspense fallback={<div>Loading images...</div>}>
           <LazyImage />
         </Suspense>
-       
       </div>
     </>
   )
