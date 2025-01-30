@@ -25,7 +25,6 @@ function HotelBooking() {
   return (
     <>
       <div className="mt-14 min-h-full bg-orange-100 flex items-center justify-center p-2">
-        
         <div className="bg-white  rounded-lg shadow-xl p-8 w-full max-w-2xl">
           <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center">Book Your Hotel</h1>
           <form onSubmit={handleSubmit} >
@@ -120,8 +119,10 @@ function HotelBooking() {
             </button>
           </form>
         </div>
-        <div>
-        <div className="grid grid-cols-1 justify-center md:flex items-center  gap-4 m-2 ">
+
+      </div>
+      <div>
+        <div className="grid grid-cols-1 justify-center md:flex items-center bg-gray-200 gap-4 p-2 ">
           {hotels.map((hotel) => (
             <div
               key={hotel.id}
@@ -140,10 +141,8 @@ function HotelBooking() {
             </div>
           ))}
         </div>
-
       </div>
-      
-      </div>
+      <hr></hr>
     </>
   );
 }
