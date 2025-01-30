@@ -10,11 +10,11 @@ import HolidayOffer from './pages/HolidayOffer';
 import HotelBooking from './pages/HotelBooking';
 import Dashboard from './components/dashboard/DashBoard';
 
-const  App = () => {
-   const location = useLocation();
+function App() {
+  const location = useLocation();
 
  
-   const noNavbarRoutes = ['/api/user/dashboard'];
+  const noNavbarRoutes = ['/api/user/dashboard'];
 
   return (
     <>
@@ -28,13 +28,11 @@ const  App = () => {
         <Route path="/offer" element={<HolidayOffer />} />
         <Route path="/hotel" element={<HotelBooking />} />
         <Route path="/api/user/dashboard" element={<Dashboard />}/>
- 
-       </Routes>
-       {!noNavbarRoutes.includes(location.pathname) && <Footer />} 
+      </Routes>
+      {!noNavbarRoutes.includes(location.pathname) && <Footer />}
     </>
   );
 }
-  
 
 export default function AppWrapper() {
   return (
@@ -43,17 +41,3 @@ export default function AppWrapper() {
     </Router>
   );
 }
-
-
-
- // <div>
-  // <Navbar/>
-  //       <Home/>      
-  //       <About/>
-  //       <HolidayOffer/>
-  //       <HotelBooking/>
-  //       <SignUpForm/>
-  //       <LoginForm/>
-  // <Footer/>
-  // </div>
-// export default App;
