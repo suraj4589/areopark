@@ -1,12 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import Logo from "../../assets/logo.jpg";
-
+import {useLocation} from 'react-router-dom'
 import { navbarMenu } from "../../constants";
 
 
 function Navbar() {
 
- 
+  const pathname = useLocation();
   
   const [openNavigation, setOpenNavigation] = useState(false);
   const ref = useRef(null);
@@ -75,11 +75,10 @@ function Navbar() {
         >
           <ul className="flex  flex-col  lg:flex-row lg:space-x-6 items-center lg:items-center">
             {navbarMenu.map((item) => (
-              <li className="my-2  lg:my-0">
+              <li key={item.id} className="my-2  lg:my-0">
                 <a
-                   key={item.id}
                   href={item.url}
-                  className={`" text-white  hover:text-gray-800 px-4 py-2" }
+                  className=" text-white  hover:text-gray-800 px-4 py-2"
                 >
                   {item.title}
                 </a>
