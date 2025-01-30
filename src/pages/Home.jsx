@@ -5,10 +5,7 @@ import WhereGoMore from '../components/Homecontainer/WhereGoMore'
 import AirlinePartners from '../components/Homecontainer/AirlinePartners'
 import AreoparkScene from '../components/Homecontainer/AreoparkScene'
 import LoginForm from '../components/login/LoginForm'
-import About from './About'
-import HotelBooking from './HotelBooking'
-import HolidayOffer from './HolidayOffer'
-import SignupForm from '../components/signup/SignUpForm'
+
 
 const LazyImage = React.lazy(() =>
   import('../components/Homecontainer/PopulerDestination'))
