@@ -1,12 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import Logo from "../../assets/logo.jpg";
-import {useLocation} from 'react-router-dom'
+
 import { navbarMenu } from "../../constants";
 
 
 function Navbar() {
 
-  const pathname = useLocation();
+ 
   
   const [openNavigation, setOpenNavigation] = useState(false);
   const ref = useRef(null);
@@ -79,7 +79,7 @@ function Navbar() {
                 <a
                    key={item.id}
                   href={item.url}
-                  className={`" text-white  hover:text-gray-800 px-4 py-2" ${item.url === pathname.hash}`}
+                  className={`" text-white  hover:text-gray-800 px-4 py-2" }
                 >
                   {item.title}
                 </a>
