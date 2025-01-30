@@ -28,22 +28,13 @@ const  App = () => {
         <Route path="/offer" element={<HolidayOffer />} />
         <Route path="/hotel" element={<HotelBooking />} />
         <Route path="/api/user/dashboard" element={<Dashboard />}/>
-  // <div>
-  // <Navbar/>
-  //       <Home/>      
-  //       <About/>
-  //       <HolidayOffer/>
-  //       <HotelBooking/>
-  //       <SignUpForm/>
-  //       <LoginForm/>
-  // <Footer/>
-  // </div>
+ 
        </Routes>
        {!noNavbarRoutes.includes(location.pathname) && <Footer />} 
     </>
   );
 }
-  // export default App;
+  
 
 export default function AppWrapper() {
   return (
@@ -53,3 +44,16 @@ export default function AppWrapper() {
   );
 }
 
+
+
+ // <div>
+  // <Navbar/>
+  //       <Home/>      
+  //       <About/>
+  //       <HolidayOffer/>
+  //       <HotelBooking/>
+  //       <SignUpForm/>
+  //       <LoginForm/>
+  // <Footer/>
+  // </div>
+// export default App;
