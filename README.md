@@ -17,6 +17,7 @@ Clone the repository:git clone https://github.com/suraj4589/areopark.git
 cd areopark
 
 Install dependencies:
+
 npm install
 
 Start the development server:
@@ -27,7 +28,11 @@ Open http://localhost:5173 in your browser.
 Packages Used 🛠️
 
 Vite: Fast build tool for modern web apps.
+
 React: Frontend framework for building interactive user interfaces.
+
 Tailwind CSS: Utility-first framework for responsive styling.
+
 Axios: Library for fetching API data.
+
 JSON Server: Mock API to simulate backend data.
