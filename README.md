@@ -5,9 +5,13 @@ Areopark is a modern air ticket booking platform built using Vite, React, and Ta
 Key Functionalities 🌟
 
 Flight Search: Search for domestic and international flights by destination, departure dates, and travel type (one-way, round-trip, multi-city).
+
 Traveler Details: Add the number of adults, children, and infants, along with travel class preferences.
+
 Live Data: Fetch flight details from a fake API (JSON server) and display real-time availability.
+
 User Dashboard: Displays user-specific booking details and provides logout functionality.
+
 Responsive Design: Optimized for all screen sizes.
 
 Getting Started 🚀
