@@ -27,7 +27,7 @@ const PopulerDestination = () => {
           <img
             src={slides[currentSlide].src}
             alt={slides[currentSlide].alt}
-            className="w-full object-cover h-48 sm:h-96 xl:h-auto"
+            className="w-full object-cover h-48 sm:h-96 xl:h-96"
             loading={currentSlide === 0 ? "eager" : "lazy"}
           />
 
